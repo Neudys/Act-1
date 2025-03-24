@@ -1,0 +1,50 @@
+/* Estilos básicos */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bg-primary {
+  background-color: #007bff;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+/* Efecto parallax (desplazamiento de fondo) */
+.parallax {
+  position: relative;
+  background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+  background-attachment: fixed; /* Este es el efecto parallax */
+  height: 100%;
+  background-color: #6c757d;
+}
+
+/* Sección con transición de opacidad */
+.opacity-effect {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Contenedor centrado de contenido */
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}

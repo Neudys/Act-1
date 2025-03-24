@@ -1,0 +1,22 @@
+Métodos Clave de GSAP, Lenis y Locomotive Scroll
+
+| 🔹 **Librería**        | 🔸 **Método**                          | 📝 **Descripción**                                                  | 🎛 **Parámetros** |
+|------------------------|-----------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+|   GSAP                 | `gsap.to(target, vars)`                 | Anima propiedades de un elemento.                                   | `target`: Selector o elemento. <br> `vars`: Propiedades a animar (ej. `{x: 100, duration: 1}`). |
+|                        | `gsap.from(target, vars)`               | Anima un elemento desde un estado inicial hasta su estado original. | Mismos que `gsap.to()`.                                                                         |
+|                        | `gsap.fromTo(target, fromVars, toVars)` | Define el estado inicial y final de la animación.                   | `fromVars`: Estado inicial. <br> `toVars`: Estado final.                                        |
+|                        | `gsap.timeline(vars)`                   | Crea una línea de tiempo para animaciones encadenadas.              | `vars`: Configuración opcional.                                                                 |
+|                        | `ScrollTrigger.create(vars)`            | Activa animaciones al hacer scroll.                                 | `vars`: Configuración como `trigger`, `start`, `end`, etc.                                      |
+|                        | `gsap.registerPlugin(plugin)`           | Registra un plugin (ej. `ScrollTrigger`).                           | `plugin`: Nombre del plugin.                                                                    |
+|   Lenis.js             | `new Lenis(options)`                    | Crea una instancia de Lenis para scroll suave.                      | `options`: `{lerp, smooth, duration}`.                                                          |
+|                        | `lenis.raf(time)`                       | Actualiza Lenis en cada frame (necesario para que funcione).        | `time`: Marca de tiempo.                                                                        |
+|                        | `lenis.scrollTo(target, options)`       | Hace scroll a una posición específica.                              | `target`: Posición en px o selector. <br> `options`: `{duration, easing}`.                      |
+|                        | `lenis.stop()`                          | Detiene el scroll.                                                  | No tiene parámetros.                                                                            |
+|                        | `lenis.start()`                         | Reanuda el scroll después de `stop()`.                              | No tiene parámetros.                                                                            |
+|   Locomotive Scroll    | `new LocomotiveScroll(options)`         | Crea una instancia de Locomotive Scroll.                            | `options`: `{el, smooth, lerp, multiplier}`.                                                    |
+|                        | `locoScroll.update()`                   | Refresca la instancia y recalcula posiciones.                       | No tiene parámetros.                                                                            |
+|                        | `locoScroll.scrollTo(target, options)`  | Hace scroll a una posición específica.                              | `target`: Posición en px o selector. <br> `options`: `{duration, offset}`.                      |
+|                        | `locoScroll.destroy()`                  | Elimina la instancia y limpia eventos.                              | No tiene parámetros.                                                                            |
+|------------------------|-----------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+
+MAS INFORMACION DETALLADA : https://www.notion.so/E-piphany-1bfcb1d2d2c0806c86cac71edd305e3b?pvs=4

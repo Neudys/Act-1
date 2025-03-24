@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-piphany</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Contenedor principal de Locomotive Scroll -->
+  <div data-scroll-container>
+    <!-- Sección 1 con parallax -->
+    <section data-scroll-section class="parallax">
+      <div class="container">
+        <h1 data-scroll data-scroll-speed="9" >Sección 1 - Parallax</h1>
+        <p>Desplázate para ver el efecto parallax.</p>
+      </div>
+    </section>
+
+    <!-- Sección 2 con efecto de opacidad -->
+    <section data-scroll-section class="bg-secondary opacity-effect" id="section2">
+      <div class="container">
+        <h1>Sección 2 - Opacidad</h1>
+        <p>La opacidad cambiará a medida que haces scroll.</p>
+      </div>
+    </section>
+
+    <!-- Sección 3 normal (sin efecto específico) -->
+    <section data-scroll-section class="bg-dark">
+      <div class="container">
+        <h1>Sección 3</h1>
+        <p>Solo un fondo oscuro sin animaciones adicionales.</p>
+      </div>
+    </section>
+
+  </div>
+  <script type="module" src="src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+</body>
+</html>
